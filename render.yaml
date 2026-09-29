@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: cf-clean-ips
+    runtime: go
+    plan: free
+    buildCommand: "go build -o app"
+    startCommand: "./app"
